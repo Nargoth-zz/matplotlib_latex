@@ -1,0 +1,38 @@
+\documentclass{article}
+    % General document formatting
+    \usepackage[margin=0.7in]{geometry}
+    \usepackage[parfill]{parskip}
+    \usepackage[utf8]{inputenc}
+    \usepackage{graphicx}
+    \usepackage{tikz}
+    
+    % Related to math
+    \usepackage{amsmath,amssymb,amsfonts,amsthm}
+
+\begin{document}
+
+\begin{figure}[htpb]
+\begin{center}
+\resizebox{6.5cm}{!}{\input{plots/short_tic_labels.pgf}}
+\resizebox{6.5cm}{!}{\input{plots/long_tic_labels.pgf}}
+\caption{PGF Plots.}
+\end{center}
+\end{figure}
+
+\begin{figure}[htpb]
+\begin{center}
+\resizebox{6.5cm}{!}{\input{plots/short_tic_labels.pgf}}
+\resizebox{6.5cm}{!}{\input{plots/long_tic_labels_modxtitle.pgf}}
+\caption{PGF Plots xlabel truncated.}
+\end{center}
+\end{figure}
+
+\begin{figure}[htpb]
+\begin{center}
+\resizebox{6.5cm}{!}{\includegraphics[width=0.45\textwidth]{plots/short_tic_labels.pdf}}
+\resizebox{6.5cm}{!}{\includegraphics[width=0.45\textwidth]{plots/long_tic_labels.pdf}}
+\caption{PDF Plots.}
+\end{center}
+\end{figure}
+
+\end{document}
